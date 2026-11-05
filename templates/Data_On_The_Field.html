@@ -16,8 +16,25 @@
 
 <!--This is the body of the html script-->
 <body>
+    <!-- main title-->
     <h1>Data On The Field</h1>
 
+    <!-- Instructions-->
+    <p>Search for NFL game by Entering a date</p>
+
+    <!-- Form for User to Enter Date
+        Sends user to /games page
+    -->
+    <form action = "/games" method = "get">
+
+        <label for = "game_date">Enter a Date:</label>
+
+        <!-- Creates a date selection box -->
+        <input type = "date" name = "game_date" id = "game_date" required>
+
+        <!-- Creates Button to submit form -->
+        <button type = "submit">Search Games</button>
+    </form>
 
 
 </body>
