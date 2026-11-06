@@ -1,0 +1,30 @@
+<!doctype html>
+
+<html>
+
+<head>
+
+    <!-- Title of the Games Page-->
+    <title>NFL Games</title>
+
+</head>
+
+<body>
+
+    <h1>NFL Games</h1>
+
+    <!--
+    The double curly brackets are Jinja syntax.
+
+    Flask sends game_date from Python, and
+    {{ game_date }} displays its value here.
+    -->
+    <p>Games for: {{game_date}}</p>
+
+    <!-- Temp Message-->
+    <p>NFL games should appear here</p>
+
+    <a href = "/games">Search another date</a>
+</body>
+
+</html>
